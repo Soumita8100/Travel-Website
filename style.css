@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) , url(naturepic.jpg) ;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+.Menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.Menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid yellow;
+    transition: 0.4s linear;
+}
+.Menu a:hover:before{
+    width: 100%;
+}
+
+.Register a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.Register a:hover{
+    background: transparent;
+    border: 2px solid yellow;
+    color: white;
+}
+
+h3{
+    color: white;
+    margin: 80px 110px -25px;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 1px ;
+}
+/* h1{
+    color: transparent;
+    margin: 0 110px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150px;
+    letter-spacing: 10px;
+    opacity: 0.7;
+    background-image: linear-gradient(45deg black,white,black,white,black);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+h1{
+    color: transparent; /* Make text color transparent to allow the background to show */
+    margin: 0 110px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 190px;
+    letter-spacing: 100px;
+    opacity: 0.5; /* Set full opacity on the text */
+    background-image: linear-gradient(45deg, black, white, black, white, black, white, black);/* Defined gradient properly */
+    background-size: 100%; /* Increase the size to make the gradient visible */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -moz-background-clip: text; /* Firefox support */
+    -webkit-text-fill-color: transparent; /*Ensures the text color is transparent */
+} 
+.sec a{
+text-decoration: none;
+color: black;
+background-color: yellow;
+padding: 20px 20px;
+letter-spacing: 5px;
+position: absolute;
+top: 80%;
+left: 40%;
+transition: 0.4s;
+}
+.sec a:hover{
+    background: transparent;
+    border: 2px solid yellow;
+    color: white;
+}
